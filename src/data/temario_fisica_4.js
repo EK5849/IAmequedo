@@ -168,4 +168,3 @@ export const fisicaTemas4 = [
  ]
  }
 ];
-];
