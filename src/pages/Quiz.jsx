@@ -75,22 +75,23 @@ export default function Quiz() {
       <motion.div initial={{opacity: 0}} animate={{opacity: 1}} className="max-w-2xl mx-auto pt-10 px-4">
         <div className="glass-card p-10 text-center space-y-6">
           <Award size={64} className="mx-auto text-yellow-500" />
-          <h2 className="text-3xl font-bold text-slate-800">¡Tema Completado!</h2>
-          <p className="text-lg text-slate-600">
-            Has finalizado todos los ejercicios para: <br/><strong className="text-slate-900">{hojaEncontrada.titulo}</strong>
+          <h2 className="text-3xl font-bold text-slate-800 dark:text-slate-100">¡Tema Completado!</h2>
+          <p className="text-lg text-slate-600 dark:text-slate-400">
+            Has finalizado todos los ejercicios para: <br/><strong className="text-slate-900 dark:text-white">{hojaEncontrada.titulo}</strong>
           </p>
-          <div className="py-4 border-y border-slate-100 flex justify-center gap-12">
+          <div className="py-4 border-y border-slate-100 dark:border-slate-700 flex justify-center gap-12">
             <div>
-              <span className="block text-2xl font-bold text-green-600">{topicProgress.score}</span>
-              <span className="text-sm font-medium text-slate-500">Puntaje Perfecto</span>
+              <span className="block text-2xl font-bold text-green-600 dark:text-green-400">{topicProgress.score}</span>
+              <span className="text-sm font-medium text-slate-500 dark:text-slate-400">Puntaje Perfecto</span>
+
             </div>
             <div>
-              <span className="block text-2xl font-bold text-slate-800">{total}</span>
-              <span className="text-sm font-medium text-slate-500">Preguntas Total</span>
+              <span className="block text-2xl font-bold text-slate-800 dark:text-slate-100">{total}</span>
+              <span className="text-sm font-medium text-slate-500 dark:text-slate-400">Preguntas Total</span>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-            <button onClick={resetQuiz} className="px-6 py-3 rounded-xl bg-slate-100 text-slate-700 font-bold hover:bg-slate-200 transition-colors">Volver a intentar</button>
+            <button onClick={resetQuiz} className="px-6 py-3 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-bold hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">Volver a intentar</button>
             <button onClick={() => navigate('/temario')} className="px-6 py-3 rounded-xl bg-blue-600 text-white font-bold hover:bg-blue-700 transition-colors">Regresar al temario</button>
           </div>
         </div>
@@ -105,23 +106,23 @@ export default function Quiz() {
     <div className="max-w-3xl mx-auto pt-4 px-4 space-y-8">
       
       {/* Quiz Header Tools */}
-      <div className="flex items-center justify-between pb-4 border-b border-slate-200">
-        <button onClick={() => navigate('/temario')} className="text-slate-500 hover:text-slate-800 flex items-center font-medium gap-2 transition-colors">
+      <div className="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-700">
+        <button onClick={() => navigate('/temario')} className="text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200 flex items-center font-medium gap-2 transition-colors">
           <ArrowLeft size={20} /> Temario
         </button>
         <div className="text-right">
-          <h1 className="font-bold text-slate-800 text-sm md:text-base">{hojaEncontrada.materiaNombre}</h1>
-          <p className="text-xs text-slate-500 font-medium">{'<'} {hojaEncontrada.titulo} {'>'}</p>
+          <h1 className="font-bold text-slate-800 dark:text-slate-100 text-sm md:text-base">{hojaEncontrada.materiaNombre}</h1>
+          <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">{'<'} {hojaEncontrada.titulo} {'>'}</p>
         </div>
       </div>
 
       {/* Progress Bar */}
       <div className="space-y-2">
-        <div className="flex justify-between items-center text-sm font-bold text-slate-500">
+        <div className="flex justify-between items-center text-sm font-bold text-slate-500 dark:text-slate-400">
           <span>Pregunta {topicProgress.currentIndex + 1} de {total}</span>
-          <span className="text-green-600">Puntos: {topicProgress.score}</span>
+          <span className="text-green-600 dark:text-green-400">Puntos: {topicProgress.score}</span>
         </div>
-        <div className="w-full h-3 bg-slate-200 rounded-full overflow-hidden">
+        <div className="w-full h-3 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
           <motion.div 
             className="h-full bg-blue-500"
             initial={{ width: 0 }}
@@ -136,23 +137,23 @@ export default function Quiz() {
         key={topicProgress.currentIndex}
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
-        className="glass-card p-6 md:p-10 space-y-8 bg-white"
+        className="glass-card p-6 md:p-10 space-y-8 bg-white dark:bg-slate-800"
       >
-        <h2 className="text-xl md:text-2xl font-bold text-slate-800 leading-relaxed">
+        <h2 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-100 leading-relaxed">
           {currentEj.pregunta}
         </h2>
         
         <div className="space-y-3">
           {currentEj.opciones.map((opt, idx) => {
-            let btnClass = "border-slate-200 bg-white text-slate-700 hover:border-blue-400 hover:bg-blue-50 shadow-sm";
+            let btnClass = "border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:border-blue-400 dark:hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-slate-700/50 shadow-sm";
             const isFinished = topicProgress.status === 'correct';
             
             if (isFinished && opt === currentEj.respuesta) {
-              btnClass = "border-green-500 bg-green-100 text-green-900 shadow-md ring-2 ring-green-500 ring-opacity-50 pointer-events-none";
+              btnClass = "border-green-500 bg-green-100 dark:bg-green-900/30 text-green-900 dark:text-green-300 shadow-md ring-2 ring-green-500 ring-opacity-50 pointer-events-none";
             } else if (topicProgress.status === 'incorrect' && opt === topicProgress.selected) {
-              btnClass = "border-red-400 bg-red-50 text-red-800 pointer-events-none";
+              btnClass = "border-red-400 bg-red-50 dark:bg-red-900/30 text-red-800 dark:text-red-300 pointer-events-none";
             } else if (isFinished) {
-              btnClass = "border-slate-100 bg-slate-50 text-slate-400 opacity-50 pointer-events-none";
+              btnClass = "border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-400 dark:text-slate-600 opacity-50 pointer-events-none";
             }
 
             return (
@@ -173,12 +174,12 @@ export default function Quiz() {
             <motion.div 
               initial={{ opacity: 0, height: 0, marginTop: 0 }} 
               animate={{ opacity: 1, height: 'auto', marginTop: 24 }} 
-              className="bg-red-50 p-5 rounded-2xl border border-red-200 overflow-hidden"
+              className="bg-red-50 dark:bg-red-900/20 p-5 rounded-2xl border border-red-200 dark:border-red-800/50 overflow-hidden"
             >
-              <div className="flex items-center gap-2 text-red-700 font-bold mb-2">
+              <div className="flex items-center gap-2 text-red-700 dark:text-red-400 font-bold mb-2">
                 <XCircle size={18} /> Pista importante:
               </div>
-              <p className="text-slate-800 leading-relaxed">
+              <p className="text-slate-800 dark:text-slate-300 leading-relaxed">
                 {currentEj.explicacion}
               </p>
             </motion.div>
@@ -188,9 +189,9 @@ export default function Quiz() {
             <motion.div 
               initial={{ opacity: 0, height: 0, marginTop: 0 }} 
               animate={{ opacity: 1, height: 'auto', marginTop: 24 }} 
-              className="bg-green-50 p-5 rounded-2xl border border-green-200 flex flex-col sm:flex-row items-center justify-between gap-4 overflow-hidden"
+              className="bg-green-50 dark:bg-green-900/20 p-5 rounded-2xl border border-green-200 dark:border-green-800/50 flex flex-col sm:flex-row items-center justify-between gap-4 overflow-hidden"
             >
-              <div className="flex items-center gap-3 text-green-800 font-bold">
+              <div className="flex items-center gap-3 text-green-800 dark:text-green-400 font-bold">
                 <CheckCircle2 size={24} /> 
                 <span className="text-lg">¡Correcto!</span>
               </div>
