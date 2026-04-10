@@ -16,7 +16,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter basename="/Iamequedo/">
+    <BrowserRouter basename="/IAmequedo/">
       <Routes>
         <Route path="/" element={<Layout user={user} setUser={setUser} />}>
           <Route index element={<Home />} />
