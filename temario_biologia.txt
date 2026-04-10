@@ -1,0 +1,72 @@
+Biología 
+
+1. Célula 
+    1.1 Teoría celular
+        1.1.1 Descubrimiento de la célula 
+        1.1.2 Formulación y postulados de la teoría celular 
+    1.2 Estructura celular 
+        1.2.1 Moléculas orgánicas presentes en las células y su función 
+        1.2.2 Estructura y función de los organelos celulares 
+        1.2.3 Diferencias entre células procariotas y eucariotas 
+
+2. Metabolismo celular 
+    2.1 Anabolismo y catabolismo 
+        2.1.1 Concepto de anabolismo y catabolismo 
+        2.1.2 Papel de las enzimas y del ATP en el metabolismo 
+    2.2 Fotosíntesis 
+        2.2.1 Aspectos generales de la fase luminosa 
+        2.2.2 Aspectos de la fase oscura 
+        2.2.3 Importancia 
+    2.3 Respiración anaeróbica 
+        2.3.1 Aspectos generales de la glucólisis 
+        2.3.2 Fermentación láctica y fermentación alcohólica 
+        2.3.3 Balance energético 
+    2.4 Respiración aeróbica 
+        2.4.1 Aspectos generales del Ciclo de Krebs 
+        2.4.2 Aspectos generales de la cadena respiratoria 
+        2.4.3 Balance energético 
+    
+3. Reproducción 
+    3.1 Ciclo celular 
+        3.1.1 Fases del ciclo celular 
+        3.1.2 Estructura y funciones del ADN
+        3.1.3 Estructura y funciones del ARN
+    3.2 Reproducción celular 
+        3.2.1 Fases e importancia de la mitosis 
+        3.2.2 Fases e importancia de la meiosis 
+    3.3 Reproducción a nivel de organismo 
+        3.3.1 Aspectos generales de la reproducción asexual 
+        3.3.2 Aspectos generales de la reproducción sexual 
+
+4. Mecanismos de la herencia
+    4.1 Trabajos de Mendel y sus principios de la herencia 
+    4.2 Teoría cromosómica de le herencia 
+        4.2.1 Formulación de la teoría cromosómica de la herencia 
+        4.2.2 Herencia ligada al sexo 
+        4.2.3 Concepto e importancia de las mutaciones 
+    4.3 Ingeniría genética 
+        4.3.1 Aspectos generales de la tecnología de ADN recombinable y sus aplicaciones 
+
+5. Evolución 
+    5.1 Teorías para explicar el origen de la vida 
+        5.1.1 Teoría quimiosintética de Oparin-Haldane 
+        5.1.2 Teoría endosimbiótica de Margulis 
+    5.2 Teorías para explicar el proceso evolutivo 
+        5.2.1 Teoría de Lamarck 
+        5.2.2 Teoría de Darwin-Wallace 
+        5.2.3 Teoría sintética 
+    5.3 Evidencias de la evolución: paleontológicas, anatómicas, genéticas y biogeográficas 
+    5.4 Consecuencias de la evolución: adaptación y biodiversidad 
+        5.4.1 Criterios para la clasificación de organismos 
+        5.4.2 Características generales de los cinco reinos 
+
+6. Los seres vivos y su ambiente 
+    6.1 Estructura del ecosistema 
+        6.1.1 Niveles de organización ecológicos: población, comunidad y ecosistema 
+        6.1.2 Características de los componentes abióticos y bióticos 
+    6.2 Dinámica del ecosistema 
+        6.2.1 Flujo de energía en las cadenas y tramas alimenticias 
+        6.2.2 Ciclos biogeoquímicos 
+        6.2.3 Relaciones inter e intraespecíficas 
+    6.3 Deterioro ambiental 
+

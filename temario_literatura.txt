@@ -1,0 +1,40 @@
+Literatura 
+
+1. El Texto 
+    1.1 Propiedades del texto: propósito, adecuación, coherencia, organización textual y disposición espacial
+    1.2 Relación entre función lingüística y su organización textual
+    1.3 El texto periodístico 
+        1.3.1 Propósito 
+        1.3.2 Función referencial 
+        1.3.3 Elementos de la nota informativa 
+        1.3.4 La selección, jerarquización, omisión y reiteración de la información 
+    1.4 El texto dramático 
+        1.4.1 Organización dialógica
+        1.4.2 Acción: desarrollo, nudo y desenlace 
+        1.4.3 Los personajes 
+        1.4.4 Tragedia. Características 
+        1.4.5 Comedia. Características 
+    1.5 El texto poético 
+        1.5.1 El poema
+        1.5.2 Análisis intratextual del poema
+            1.5.2.1 Metro
+            1.5.2.2 Rima
+            1.5.2.3 Ritmo 
+            1.5.2.4 Metáfora y otras figuras retóricas 
+        1.5.3 Análisis contextual 
+
+2. Géneros y corrientes literarias 
+    2.1 Géneros literarios: épico, lírico y dramático 
+    2.2 Corrientes literarias 
+        2.2.1 Realismo. Características y autores representativos 
+        2.2.2 Contemporánea. Características y autores representativos 
+    2.3 Texto narrativo 
+        2.3.1 El cuento. Características y corrientes 
+        2.3.2 La novela. Características y corrientes 
+
+3. Redacción y técnicas de investigación documental 
+    3.1 El resumen, la paráfrasis, la cita textual y el comentario 
+    3.2 Registro de las fuentes 
+        3.2.1 Fichas bibliográficas y hemerográficas 
+        3.2.2 Fichas de trabajo 
+        

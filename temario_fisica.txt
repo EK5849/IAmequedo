@@ -1,0 +1,97 @@
+Física
+
+1. Cinemática
+    1.1 Características de los fenómenos mecánicos
+        1.2 Movimiento rectilíneo uniforme
+        1.3 Movimiento uniformemente acelerado
+
+2. Fuerzas, leyes de Newton y Ley de la Gravitación Universal
+    2.1 Factores que cambian la estructura o el estado de movimiento de objetos
+    2.2 El concepto de fuerza
+    2.3 El carácter vectorial de la fuerza
+    2.4 Superposición de fuerzas
+    2.5 Primera Ley de Newton
+    2.6 Segunda Ley de Newton
+        2.6.1 Concepto de peso
+        2.6.2 Concepto de masa
+        2.7 Tercera Ley de Newton
+    2.8 Equilibrio rotacional y traslacional. Fuerza y torca
+    2.9 Ley de la Fuerza en un resorte (Ley de Hooke)
+    2.10 Ley de la Gravitación Universal. Movimiento de planetas
+
+3. Trabajo y leyes de la conservación
+    3.1 Concepto de trabajo mecánico
+    3.2 Concepto de potencia
+    3.3 Energía cinética
+    3.4 Energía potencial
+    3.5 Conservación de la energía mecánica
+    3.6 Conservación del ímpetu (momento)
+    3.7 Colisiones entre partículas en una dimensión
+    3.8 Procesos disipativos (fricción y rozamiento)
+
+4. Termodinámica
+    4.1 Calor y temperatura
+        4.1.1 Diferencia entre calor y temperatura
+        4.1.2 Equilibrio térmico
+        4.1.3 Escalas termométricas absolutas
+        4.1.4 Conductividad calorífica y capacidad térmica específica
+        4.1.5 Leyes de la Termodinámica
+    4.2 Teoría Cinética de los Gases
+        4.2.1 Estructura de la materia (enfoque clásico)
+        4.2.2 Temperatura según la Teoría Cinética de los Gases
+        4.2.3 Ecuación de estado de los gases ideales
+
+5. Ondas
+    5.1 Caracterización de ondas mecánicas
+    5.2 Reflexión y refracción de ondas
+    5.3 Difracción e interferencia de ondas
+    5.4 Energía de una onda incidente y de las ondas transmitida y reflejada
+
+6. Electromagnetismo
+    6.1 Efectos cualitativos entre cuerpos cargados eléctricamente
+    6.2 Ley de Coulomb. Campo eléctrico
+    6.3 Ley de Ohm y potencia eléctrica
+    6.4 Circuitos
+        6.4.1 Circuitos de resistencias
+        6.4.2 Circuitos de condensadores
+    6.5 Campo magnético
+    6.6 Inducción electromagnética
+    6.7 Relación entre campo magnético y eléctrico
+    6.8 Inducción de campos
+    6.9 La luz como onda electromagnética
+    6.10 Espectro electromagnético
+    6.11 Leyes de Ampere–Maxwell
+    6.12 Leyes de Faraday y Henry
+
+7. Fluidos
+    7.1 Fluidos en reposo
+        7.1.1 Presión atmosférica
+        7.1.2 Principio de Pascal
+        7.1.3 Principio de Arquímedes
+        7.1.4 Presión hidrostática
+        7.1.5 Tensión superficial y capilaridad
+    7.2 Fluidos en movimiento
+         7.2.1 Ecuación de continuidad
+        7.2.2 Ecuación de Bernoulli
+        7.2.3 Viscosidad
+
+8. Óptica
+    8.1 Reflexión y refracción de la luz
+    8.2 Espejos planos y esféricos
+    8.3 Lentes convergentes y divergentes
+    8.4 Punto de vista contemporáneo (dualidad)
+        8.4.1 Modelo corpuscular
+        8.4.2 Modelo ondulatorio
+
+9. Física contemporánea
+    9.1 Estructura atómica de la materia
+        9.1.1 Modelos atómicos
+        9.1.2 El experimento de Rutherford
+        9.1.3 Espectroscopía y el modelo atómico de Bohr
+    9.2 Física nuclear
+        9.2.1 El descubrimiento de la radiactividad
+        9.2.2 Decaimiento radiactivo
+        9.2.3 Detectores de radiactividad
+        9.2.4 Fisión y fusión nucleares
+        9.2.5 Aplicaciones de la radiactividad y la energía nuclear
+    9.3 Otras formas de energía 

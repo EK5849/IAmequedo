@@ -1,0 +1,64 @@
+Quimica
+
+1. Temas básicos 
+    1.1 Sustancias químicas
+        1.1.1 Sustancias puras: elemento y compuesto
+        1.1.2 Mezclas: homogéneas y heterogéneas 
+    1.2 Estructura atómica 
+        1.2.1 Conceptos de átomo, protón, electrón, neutrón, número atómico y masa atómica 
+    1.3 tabla periodica 
+        1.3.1 Clasificación de elementos: metales, no metale y metaloides
+        1.3.2 Regla del octeto de Lewis
+        1.3.3 Propiedades periódicas 
+            1.3.3.1 Electronegatividad y tipos de alcance: iónico y covalente 
+    1.4 Clasificación de los compuestos en óxidos básicos, óxidos ácidos (anhídridos), ácidos, bases y sales
+    1.5 Mol 
+        1.5.1 Concepto 
+        1.5.2 Cálculo de masa molar 
+
+2. Agua 
+    2.1 Composición del agua y estructura molecular 
+        2.1.1 Polaridad y puentes de hidrógeno 
+    2.2 Propiedades físicas: puntos de ebullición y de fusión, capacidad calorífica específica 
+    2.3 Propiedades químicas: tipo de enlace, capacidad (poder) disolvente del agua 
+    2.4 Ácidos y bases 
+        2.4.1 Clasificación por su conductividad: fuertes y débiles 
+        2.4.2 Diferencias de las sustancias de acuerdo a su pH
+        2.4.3 Indicadores de pH
+    2.5 Soluciones o disoluciones 
+        2.5.1 Concepto de soluto y disolvente 
+    2.6 Contaminación del agua 
+        2.6.1 Principales contaminantes: físicos, químicos y biológicos 
+        2.6.2 Fuentes generadoras: Industrial urbana y agrícola 
+    2.7 Importancia y aplicaciones del agua aea la humanidad 
+    2.8 Uso responsable y preservación del agua 
+
+3. Aire 
+    3.1 ¿qué es el aire?
+    3.2 Composición porcentual del aire 
+    3.3 Reacciones del oxígeno 
+        3.3.1 Reacciones de combustión 
+        3.3.2 Formación de óxidos básicos 
+        3.3.3 Formación de óxidos básicos ( nitrógeno, azúfre y carbono)
+    3.4 Reacciones del óxido-reducción 
+    3.5 Ciclos del oxígeno, nitrógeno y carbono 
+    3.6 Contaminantes del aire 
+        3.6.1 Contaminantes primarios del aire (óxidos de nitrógeno, carbono y azufre, partículas suspendidas e hidrocarburos)
+        3.6.2 Principales fuentes generadoras (industriales urbanas y agrícolas)
+        3.6.3 Impacto ambiental: inversión térmica y lluvia ácida 
+
+4. Alimentos 
+    4.1 Carbohidratos 
+        4.1.1 Estructura 
+        4.1.2 Fuente de energía de disponibilidad inmediata 
+    4.2 Lípidos 
+        4.2.1 Estructura 
+        4.2.2 Almacén de energía 
+    4.3 Proteínas 
+        4.3.1 Grupos funcionales presentes en aminoácidos 
+        4.3.2 Enlace peptídico 
+    4.4 Vitaminas y minerales: fuentes e importancia 
+
+5. La energía y las reacciones químicas
+    5.1 Reacciones químicas endotérmicas y exotérmicas 
+    

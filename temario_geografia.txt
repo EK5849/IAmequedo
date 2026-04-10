@@ -1,0 +1,55 @@
+Geografía 
+
+1. La Tierra, base del desarrollo del hombre 
+    1.1 La geografía, una ciencia natural y social: relación del hombre con la naturaleza 
+    1.2 La ubicación espacial y temporal 
+        1.2.1 Coordenadas geográficas: latitud y longitud, ejercicios de aplicación 
+        1.2.2 Los husos horarios y el cambio de fecha: ejercicios de aplicación 
+    1.3 Geografía física: el paisaje natural 
+        1.3.1 La tectónica global 
+            1.3.1.1 Zonas de riesgo volcánico y sísmico en el mundo y en México, en relación con las placas tectónicas 
+            1.3.1.2 Distribución de las llanuras, mesetas y montañas más  representativas del mundo y de México 
+            1.3.1.3 Relación de las formas del relieve con la distribución de la población y las actividades económicas 
+            1.3.1.4 Distribución de los minerales preciosos, industriales y energéticos en el mundo y en México 
+        1.3.2 El agua como recurso fundamental 
+            1.3.2.1 El ciclo hidrológico como conjunto de procesos que relaciona la hidrósfera, con la atmósfera, la litósfera y la biósfera 
+            1.3.2.2 Distribución de los principales rios y lagos del mundo y de México 
+            1.3.2.3 Relación de los ríos, los lagos y las aguas subterráneas con la distribución de la población y las actividades económicas 
+            1.3.2.4 Importancia del mar: aprovechamiento de las mareas y las corrientes marinas; efectos climáticos de las corrientes y su relación con las actividades económicas 
+            1.3.2.5 Los recursos pesqueros y minerales del mar y su aprovechamiento: banco de especies de aguas frías y cálidas; petróleo, gas y concentrados polimetálicos 
+
+2. Geografía humana: el paisaje cultural (espacio geográfico)
+    2.1 Las regiones naturales 
+        2.1.1 Su distribución en el mundo y en México 
+        2.1.2 Sus recursos naturales renovables y no renovables y su relación con las actividades económicas 
+        2.1.3 La alteración de las regiones naturales como resultado de la actividad humana y las concentraciones de población 
+        2.1.4 Zonas de riesgo por fenómenos meteorológicos en México: los ciclones 
+    2.2 Problemas de deterioro ambiental: causas y consecuencias
+        2.2.1 El cambio climático global: el "efecto invernadero"
+        2.2.2 Adelgazamiento de la capa de ozono 
+        2.2.3 Contaminación, sobreexplotación y desperdicio de las aguas por actividad agropecuaria e industrial, asi como el uso doméstico 
+        2.2.4 Zonas de riesgo por la explotación y transporte de petróleo: la marea negra 
+    2.3 La población mundial y de México 
+        2.3.1 Áreas de concentración y vacíos de la población en el mundo y en México 
+        2.3.2 El crecimiento acelerado de la población: causas y consecuencias 
+        2.3.3 Movimientos migratorios actuales: causas y consecuencias 
+            2.3.3.1 Migraciones internacionales: sur-norte 
+            2.3.3.2 Migraciones nacionales: campo-ciudad 
+    2.4 La economía mundial 
+        2.4.1 Contrastes entre países desarrollados y subdesarrollados 
+            2.4.1.1 Indicadores socioeconómicos: natalidad, analfabetismo, ingreso per cápita, esperanza de vida, etcétera 
+        2.4.2 La globalización económica 
+            2.4.2.1 Papel de las trasnacionales y del Fondo Monetario Internacional 
+            2.4.2.2 Los bloques económicos regionales: liderazgo de los Estados Unidos de América 
+    2.5 Organización política actual del mundo y de México 
+        2.5.1 La desintegración y unificación de los Estados 
+            2.5.1.1 Los nuevos países de Europa 
+            2.5.1.2 Principales Zonas de tensión política en el mundo 
+        2.5.2 División política de México, límites y fronteras 
+    2.6 México, aspectos económicos 
+        2.6.1 Principales áreas de producción agropecuaria y pesquera 
+        2.6.2 Distribución de los principales productos mineros y energéticos 
+        2.6.3 Principales áreas industriales del país 
+        2.6.4 Comercio exterior: productos de importación y exportación 
+        2.6.5 Importancia de las vías de comunicación y de los transportes 
+        
