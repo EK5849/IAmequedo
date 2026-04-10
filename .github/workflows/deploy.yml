@@ -30,6 +30,15 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         run: npm ci
+      - name: Compile and Merge Data
+        run: |
+          node scripts/mergeNuevosEjercicios.js
+          if ! git diff --quiet; then
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -am "chore: automatically merged questions to temario_estructurado.json [skip ci]"
+            git push
+          fi
       - name: Build
         run: npm run build
       - name: Setup Pages
