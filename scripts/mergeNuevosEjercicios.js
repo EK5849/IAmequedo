@@ -15,8 +15,8 @@ import { matematicas3Temas } from '../src/data/temario_matematicas_3.js';
 import { matematicas4Temas } from '../src/data/temario_matematicas_4.js';
 import { matematicas5Temas } from '../src/data/temario_matematicas_5.js';
 import { matematicas6Temas } from '../src/data/temario_matematicas_6.js';
-import { matematicas7Temas } from '../src/data/temario_matematicas_7.js';
-import { matematicas8Temas } from '../src/data/temario_matematicas_8.js';
+import { matematicasTemas7 } from '../src/data/temario_matematicas_7.js';
+import { matematicasTemas8 } from '../src/data/temario_matematicas_8.js';
 import { biologiaTemas1 } from '../src/data/temario_biologia_1.js';
 import { biologiaTemas2 } from '../src/data/temario_biologia_2.js';
 import { historiaUniversalTemas } from '../src/data/temario_historia_universal.js';
@@ -35,7 +35,7 @@ const temario = JSON.parse(temarioRaw);
 const newExercises = [
   ...espanolTemas2, ...espanolTemas3, ...fisicaTemas1, ...fisicaTemas2, ...fisicaTemas3, ...fisicaTemas4, ...quimicaTemas, ...quimicaTemas2,
   ...matematicas1Temas, ...matematicas2Temas, ...matematicas3Temas, ...matematicas4Temas, ...matematicas5Temas,
-  ...matematicas6Temas, ...matematicas7Temas, ...matematicas8Temas,
+  ...matematicas6Temas, ...matematicasTemas7, ...matematicasTemas8,
   ...biologiaTemas1, ...biologiaTemas2, ...historiaUniversalTemas, ...historiaMexicoTemas1, ...literaturaTemas, ...geografiaTemas, ...faltantesTemas
 ];
 
