@@ -4,6 +4,7 @@ import { BookOpen, LogOut, User } from 'lucide-react';
 import { motion } from 'framer-motion';
 import ThemeToggle from './ThemeToggle';
 import { avatarOptions } from './UserPrompt';
+import RadioPlayer from './RadioPlayer';
 
 function Navbar({ user, setUser }) {
   let userConfig = avatarOptions[0];
@@ -61,6 +62,7 @@ export default function Layout({ user, setUser }) {
           <Outlet />
         </motion.div>
       </main>
+      <RadioPlayer />
     </div>
   );
 }
