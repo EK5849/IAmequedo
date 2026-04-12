@@ -11,8 +11,19 @@ export default function Simulator() {
   const [finished, setFinished] = useState(false);
   const [score, setScore] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [simulationQuestions, setSimulationQuestions] = useState([]);
 
-  const question = mockFlashcards[currentQuestion];
+  const generateQuestions = () => {
+    // Seleccionar 120 reactivos al azar del pool
+    const shuffled = [...mockFlashcards].sort(() => 0.5 - Math.random());
+    setSimulationQuestions(shuffled.slice(0, 120));
+  };
+
+  useEffect(() => {
+    generateQuestions();
+  }, []);
+
+  const question = simulationQuestions[currentQuestion];
 
   const options = React.useMemo(() => {
     if (!question || !question.options) return [];
@@ -45,7 +56,7 @@ export default function Simulator() {
     
     setTimeout(() => {
       setSelectedAnswer(null);
-      if (currentQuestion < mockFlashcards.length - 1) {
+      if (currentQuestion < simulationQuestions.length - 1) {
         setCurrentQuestion(c => c + 1);
       } else {
         setFinished(true);
@@ -59,7 +70,7 @@ export default function Simulator() {
         <AlertCircle size={48} className="mx-auto text-primary-500" />
         <h1 className="text-4xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight">Simulador UNAM</h1>
         <p className="text-lg text-slate-500 dark:text-slate-400">
-          Esta es una simulación del examen. Tendrás 120 minutos para contestar {mockFlashcards.length} preguntas de opción múltiple. ¡Mucho éxito!
+          Esta es una simulación del examen. Tendrás 120 minutos para contestar {simulationQuestions.length} preguntas de opción múltiple, generadas aleatoriamente. ¡Mucho éxito!
         </p>
         <button 
           onClick={() => setStarted(true)}
@@ -77,10 +88,11 @@ export default function Simulator() {
         <CheckCircle2 size={64} className="mx-auto text-green-500" />
         <h1 className="text-4xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight">¡Tiempo Agotado / Examen Terminado!</h1>
         <div className="text-2xl font-bold bg-slate-100 dark:bg-slate-800 p-6 rounded-2xl">
-          Tu puntaje: <span className="text-primary-600">{score}</span> / {mockFlashcards.length}
+          Tu puntaje: <span className="text-primary-600">{score}</span> / {simulationQuestions.length}
         </div>
         <button 
           onClick={() => {
+            generateQuestions();
             setStarted(false);
             setFinished(false);
             setCurrentQuestion(0);
@@ -95,6 +107,7 @@ export default function Simulator() {
     );
   }
 
+  if (!question) return null;
 
   return (
     <div className="max-w-4xl mx-auto space-y-8">
@@ -106,7 +119,7 @@ export default function Simulator() {
           </span>
         </div>
         <div className="font-bold text-slate-400">
-          Pregunta {currentQuestion + 1} de {mockFlashcards.length}
+          Pregunta {currentQuestion + 1} de {simulationQuestions.length}
         </div>
       </div>
 
