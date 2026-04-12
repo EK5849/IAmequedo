@@ -119,7 +119,7 @@ export default function Simulator() {
             }}
             className="px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white rounded-2xl font-bold text-lg shadow-lg shadow-primary-500/30 transition-transform active:scale-95"
           >
-            Normal (Por Materias)
+            Normal
           </button>
           <button 
             onClick={() => {
@@ -129,7 +129,7 @@ export default function Simulator() {
             }}
             className="px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white rounded-2xl font-bold text-lg shadow-lg shadow-amber-500/30 transition-transform active:scale-95"
           >
-            Modo Aleatorio (Caos)
+            Modo Aleatorio
           </button>
         </div>
       </div>
