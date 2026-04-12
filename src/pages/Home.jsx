@@ -1,7 +1,67 @@
+import { useState, useEffect } from 'react';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
-import { BookOpen, Star, Target } from 'lucide-react';
+import { BookOpen, Star, Target, Trophy, CheckCircle, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
+
+function DashboardStats() {
+  const [stats, setStats] = useState({ score: 0, completed: 0, totalStarted: 0 });
+
+  useEffect(() => {
+    const currentUser = localStorage.getItem('unam_user');
+    if (!currentUser) return;
+    
+    const guardado = localStorage.getItem(`unam_progress_${currentUser}`);
+    if (guardado) {
+      try {
+        const progress = JSON.parse(guardado);
+        let score = 0;
+        let completed = 0;
+        let started = 0;
+        
+        Object.values(progress).forEach(item => {
+           started++;
+           if (item.score) score += item.score;
+           if (item.status === 'finished') completed++;
+        });
+        
+        setStats({ score, completed, totalStarted: started });
+      } catch (e) {}
+    }
+  }, []);
+
+  return (
+    <motion.div 
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="grid grid-cols-3 gap-4 md:gap-6 pt-4 pb-8"
+    >
+      <div className="glass-card p-4 md:p-6 flex flex-col items-center justify-center text-center">
+        <div className="w-12 h-12 bg-yellow-100 dark:bg-yellow-900/40 text-yellow-600 dark:text-yellow-400 rounded-2xl flex items-center justify-center mb-3 border border-yellow-200 dark:border-yellow-800">
+          <Trophy size={24} />
+        </div>
+        <div className="text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-slate-100">{stats.score}</div>
+        <div className="text-sm font-medium text-slate-500 dark:text-slate-400">Puntos Obtenidos</div>
+      </div>
+      
+      <div className="glass-card p-4 md:p-6 flex flex-col items-center justify-center text-center">
+        <div className="w-12 h-12 bg-green-100 dark:bg-green-900/40 text-green-600 dark:text-green-400 rounded-2xl flex items-center justify-center mb-3 border border-green-200 dark:border-green-800">
+          <CheckCircle size={24} />
+        </div>
+        <div className="text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-slate-100">{stats.completed}</div>
+        <div className="text-sm font-medium text-slate-500 dark:text-slate-400">Temas Listos</div>
+      </div>
+      
+      <div className="glass-card p-4 md:p-6 flex flex-col items-center justify-center text-center">
+        <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900/40 text-primary-600 dark:text-primary-400 rounded-2xl flex items-center justify-center mb-3 border border-primary-200 dark:border-primary-800">
+          <Zap size={24} />
+        </div>
+        <div className="text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-slate-100">{stats.totalStarted}</div>
+        <div className="text-sm font-medium text-slate-500 dark:text-slate-400">Temas Iniciados</div>
+      </div>
+    </motion.div>
+  );
+}
 
 export default function Home() {
   const containerVariants = {
@@ -24,7 +84,7 @@ export default function Home() {
       initial="hidden"
       animate="visible"
     >
-      <section className="text-center space-y-6 pt-8 pb-12">
+      <section className="text-center space-y-6 pt-8 pb-4">
         <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-100 dark:bg-primary-900/40 text-primary-700 dark:text-primary-300 font-medium text-sm">
           <Star size={16} className="fill-current" />
           <span>¡Prepárate para la UNAM 2026!</span>
@@ -40,11 +100,11 @@ export default function Home() {
         <motion.p variants={itemVariants} className="text-xl text-slate-500 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
           Estudia interactivamente los temas de la guía oficial. Memoriza más rápido, practica con simuladores y asegura tu lugar.
         </motion.p>
-        
-        <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-          {/* Botones removidos para usar las tarjetas como navegación principal */}
-        </motion.div>
       </section>
+
+      <motion.div variants={itemVariants}>
+        <DashboardStats />
+      </motion.div>
 
       <motion.section variants={itemVariants} className="grid md:grid-cols-3 gap-6">
         <Link to="/temario" className="glass-card p-6 space-y-4 hover:-translate-y-1 transition-transform border border-transparent hover:border-blue-200 text-left cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500">
