@@ -8,7 +8,8 @@ import { ChevronRight, ChevronDown, CheckCircle2, Circle } from 'lucide-react';
 export default function Syllabus() {
   const [expandedMateria, setExpandedMateria] = useState(null);
   const [progressData] = useState(() => {
-    const guardado = localStorage.getItem('unam_progress');
+    const currentUser = localStorage.getItem('unam_user') || 'default';
+    const guardado = localStorage.getItem(`unam_progress_${currentUser}`);
     if (guardado) {
       try {
         return JSON.parse(guardado);

@@ -16,24 +16,27 @@ export default function Quiz() {
 
   // Single progress object loaded from local storage specifically for this subtopic
   const [topicProgress, setTopicProgress] = useState(() => {
-    const guardado = localStorage.getItem('unam_progress');
+    const currentUser = localStorage.getItem('unam_user') || 'default';
+    const guardado = localStorage.getItem(`unam_progress_${currentUser}`);
     const stateDb = guardado ? JSON.parse(guardado) : {};
     return stateDb[temaId] || { currentIndex: 0, status: 'idle', selected: null, score: 0 };
   });
 
   // Ensure state syncs if the URL params change without unmounting
   useEffect(() => {
-    const guardado = localStorage.getItem('unam_progress');
+    const currentUser = localStorage.getItem('unam_user') || 'default';
+    const guardado = localStorage.getItem(`unam_progress_${currentUser}`);
     const stateDb = guardado ? JSON.parse(guardado) : {};
     setTopicProgress(stateDb[temaId] || { currentIndex: 0, status: 'idle', selected: null, score: 0 });
   }, [temaId]);
 
   const saveProgress = (newState) => {
     setTopicProgress(newState);
-    const guardado = localStorage.getItem('unam_progress');
+    const currentUser = localStorage.getItem('unam_user') || 'default';
+    const guardado = localStorage.getItem(`unam_progress_${currentUser}`);
     const stateDb = guardado ? JSON.parse(guardado) : {};
     stateDb[temaId] = newState;
-    localStorage.setItem('unam_progress', JSON.stringify(stateDb));
+    localStorage.setItem(`unam_progress_${currentUser}`, JSON.stringify(stateDb));
   };
 
   if (!hojaEncontrada || total === 0) {
