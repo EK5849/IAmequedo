@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion';
@@ -21,6 +21,13 @@ export default function Quiz() {
     return stateDb[temaId] || { currentIndex: 0, status: 'idle', selected: null, score: 0 };
   });
 
+  // Ensure state syncs if the URL params change without unmounting
+  useEffect(() => {
+    const guardado = localStorage.getItem('unam_progress');
+    const stateDb = guardado ? JSON.parse(guardado) : {};
+    setTopicProgress(stateDb[temaId] || { currentIndex: 0, status: 'idle', selected: null, score: 0 });
+  }, [temaId]);
+
   const saveProgress = (newState) => {
     setTopicProgress(newState);
     const guardado = localStorage.getItem('unam_progress');
@@ -37,6 +44,10 @@ export default function Quiz() {
       </div>
     );
   }
+
+  // Find next topic conceptually
+  const currentIndexFlat = hojasPlanas.findIndex(h => h.id === temaId && h.materiaId === materiaId);
+  const nextHoja = currentIndexFlat >= 0 && currentIndexFlat < hojasPlanas.length - 1 ? hojasPlanas[currentIndexFlat + 1] : null;
 
   const handleAnswer = (option, correctAnswer) => {
     if (topicProgress.status === 'correct' || topicProgress.status === 'finished') return;
@@ -91,8 +102,15 @@ export default function Quiz() {
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-            <button onClick={resetQuiz} className="px-6 py-3 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-bold hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">Volver a intentar</button>
-            <button onClick={() => navigate('/temario')} className="px-6 py-3 rounded-xl bg-blue-600 text-white font-bold hover:bg-blue-700 transition-colors">Regresar al temario</button>
+            {nextHoja ? (
+              <button onClick={() => navigate(`/quiz/${nextHoja.materiaId}/${nextHoja.id}`)} className="px-6 py-3 rounded-xl bg-blue-600 text-white font-bold hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
+                Siguiente tema <ArrowRight size={20} />
+              </button>
+            ) : null}
+            <button onClick={() => navigate('/temario')} className={`px-6 py-3 rounded-xl ${nextHoja ? 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700' : 'bg-blue-600 text-white hover:bg-blue-700'} font-bold transition-colors`}>
+              Regresar al temario
+            </button>
+            <button onClick={resetQuiz} className="px-6 py-3 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-bold hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">Reintentar</button>
           </div>
         </div>
       </motion.div>
