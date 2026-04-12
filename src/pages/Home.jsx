@@ -140,10 +140,6 @@ export default function Home() {
         </motion.p>
       </section>
 
-      <motion.div variants={itemVariants}>
-        <DashboardStats />
-      </motion.div>
-
       <motion.section variants={itemVariants} className="grid md:grid-cols-3 gap-6">
         <Link to="/temario" className="glass-card p-6 space-y-4 hover:-translate-y-1 transition-transform border border-transparent hover:border-blue-200 text-left cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500">
           <div className="w-12 h-12 rounded-2xl bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 flex items-center justify-center">
@@ -169,6 +165,10 @@ export default function Home() {
           <p className="text-slate-500 dark:text-slate-400">Mide tu tiempo y conocimientos respondiendo preguntas estilo UNAM antes del día real.</p>
         </Link>
       </motion.section>
+
+      <motion.div variants={itemVariants}>
+        <DashboardStats />
+      </motion.div>
     </motion.div>
   );
 }
