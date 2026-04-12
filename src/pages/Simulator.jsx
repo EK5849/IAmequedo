@@ -12,8 +12,9 @@ export default function Simulator() {
   const [score, setScore] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [simulationQuestions, setSimulationQuestions] = useState([]);
+  const [simulationMode, setSimulationMode] = useState('normal');
 
-  const generateQuestions = () => {
+  const generateQuestions = (mode) => {
     // Agrupar reactivos por materia
     const porMateria = {};
     mockFlashcards.forEach(q => {
@@ -27,31 +28,38 @@ export default function Simulator() {
       porMateria[m].sort(() => 0.5 - Math.random());
     });
 
-    // Extraer preguntas equilibradamente (Round-Robin)
-    const seleccionadas = [];
-    
-    while (seleccionadas.length < 120) {
-      let agotadas = 0;
-      for (const m of materias) {
-        if (seleccionadas.length === 120) break;
-        if (porMateria[m].length > 0) {
-          seleccionadas.push(porMateria[m].pop());
-        } else {
-          agotadas++;
+    let seleccionadas = [];
+
+    if (mode === 'random') {
+      // Extraer preguntas equilibradamente (Round-Robin)
+      while (seleccionadas.length < 120) {
+        let agotadas = 0;
+        for (const m of materias) {
+          if (seleccionadas.length === 120) break;
+          if (porMateria[m].length > 0) {
+            seleccionadas.push(porMateria[m].pop());
+          } else {
+            agotadas++;
+          }
+        }
+        if (agotadas === materias.length) break;
+      }
+      seleccionadas = seleccionadas.sort(() => 0.5 - Math.random());
+    } else {
+      // Modo Normal: ~14 preguntas en bloque por materia (el orden de las materias es aleatorio)
+      const materiasShuffled = [...materias].sort(() => 0.5 - Math.random());
+      for (const m of materiasShuffled) {
+        const bloque = porMateria[m].slice(0, 14);
+        for (const q of bloque) {
+          if (seleccionadas.length < 120) {
+            seleccionadas.push(q);
+          }
         }
       }
-      // Si todas las materias se quedaron sin preguntas
-      if (agotadas === materias.length) break;
     }
 
-    // Barajar el examen final para mezclar el orden de las materias
-    const finalExamen = seleccionadas.sort(() => 0.5 - Math.random());
-    setSimulationQuestions(finalExamen);
+    setSimulationQuestions(seleccionadas);
   };
-
-  useEffect(() => {
-    generateQuestions();
-  }, []);
 
   const question = simulationQuestions[currentQuestion];
 
@@ -100,14 +108,30 @@ export default function Simulator() {
         <AlertCircle size={48} className="mx-auto text-primary-500" />
         <h1 className="text-4xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight">Simulador UNAM</h1>
         <p className="text-lg text-slate-500 dark:text-slate-400">
-          Esta es una simulación del examen. Tendrás 120 minutos para contestar {simulationQuestions.length} preguntas de opción múltiple, generadas aleatoriamente. ¡Mucho éxito!
+          Esta es una simulación del examen oficial. Tendrás 120 minutos para contestar 120 preguntas de opción múltiple. Selecciona en qué modalidad quieres jugar la simulación.
         </p>
-        <button 
-          onClick={() => setStarted(true)}
-          className="mx-auto px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white rounded-2xl font-bold text-lg shadow-lg shadow-primary-500/30 transition-transform active:scale-95"
-        >
-          Iniciar Simulacro
-        </button>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button 
+            onClick={() => {
+              setSimulationMode('normal');
+              generateQuestions('normal');
+              setStarted(true);
+            }}
+            className="px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white rounded-2xl font-bold text-lg shadow-lg shadow-primary-500/30 transition-transform active:scale-95"
+          >
+            Normal (Por Materias)
+          </button>
+          <button 
+            onClick={() => {
+              setSimulationMode('random');
+              generateQuestions('random');
+              setStarted(true);
+            }}
+            className="px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white rounded-2xl font-bold text-lg shadow-lg shadow-amber-500/30 transition-transform active:scale-95"
+          >
+            Modo Aleatorio (Caos)
+          </button>
+        </div>
       </div>
     );
   }
@@ -122,7 +146,7 @@ export default function Simulator() {
         </div>
         <button 
           onClick={() => {
-            generateQuestions();
+            generateQuestions(simulationMode);
             setStarted(false);
             setFinished(false);
             setCurrentQuestion(0);
