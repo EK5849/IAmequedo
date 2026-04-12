@@ -29,10 +29,18 @@ function DashboardStats() {
         let score = 0;
         let completed = 0;
         let completedSubjectsCount = 0;
+        let dynamicTotalScore = 0;
         
-        Object.values(progress).forEach(item => {
+        Object.keys(progress).forEach(temaId => {
+           const item = progress[temaId];
            if (item.score) score += item.score;
            if (item.status === 'finished') completed++;
+
+           // Contar el máximo de puntos de los temas que ya han sido iniciados o listos
+           const hoja = topicsWithExercises.find(h => h.id === temaId);
+           if (hoja && hoja.ejercicios) {
+              dynamicTotalScore += hoja.ejercicios.length;
+           }
         });
 
         temarioA1.forEach(materia => {
@@ -46,14 +54,14 @@ function DashboardStats() {
         });
         
         setStats({ 
-          score, totalScore, 
+          score, totalScore: dynamicTotalScore, 
           completed, totalTopics, 
           completedSubjects: completedSubjectsCount, totalSubjects 
         });
       } catch (e) {}
     } else {
         setStats({ 
-          score: 0, totalScore, 
+          score: 0, totalScore: 0, 
           completed: 0, totalTopics, 
           completedSubjects: 0, totalSubjects 
         });
