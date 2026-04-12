@@ -14,9 +14,39 @@ export default function Simulator() {
   const [simulationQuestions, setSimulationQuestions] = useState([]);
 
   const generateQuestions = () => {
-    // Seleccionar 120 reactivos al azar del pool
-    const shuffled = [...mockFlashcards].sort(() => 0.5 - Math.random());
-    setSimulationQuestions(shuffled.slice(0, 120));
+    // Agrupar reactivos por materia
+    const porMateria = {};
+    mockFlashcards.forEach(q => {
+      if (!porMateria[q.subject]) porMateria[q.subject] = [];
+      porMateria[q.subject].push(q);
+    });
+
+    // Barajar las preguntas dentro de cada materia
+    const materias = Object.keys(porMateria);
+    materias.forEach(m => {
+      porMateria[m].sort(() => 0.5 - Math.random());
+    });
+
+    // Extraer preguntas equilibradamente (Round-Robin)
+    const seleccionadas = [];
+    
+    while (seleccionadas.length < 120) {
+      let agotadas = 0;
+      for (const m of materias) {
+        if (seleccionadas.length === 120) break;
+        if (porMateria[m].length > 0) {
+          seleccionadas.push(porMateria[m].pop());
+        } else {
+          agotadas++;
+        }
+      }
+      // Si todas las materias se quedaron sin preguntas
+      if (agotadas === materias.length) break;
+    }
+
+    // Barajar el examen final para mezclar el orden de las materias
+    const finalExamen = seleccionadas.sort(() => 0.5 - Math.random());
+    setSimulationQuestions(finalExamen);
   };
 
   useEffect(() => {
