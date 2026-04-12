@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { User, Plus, Gamepad2, Ghost, Rocket, Cat, Dog, Zap, Star, Shield, ArrowLeft } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 
-const avatarOptions = [
+export const avatarOptions = [
   { id: 'User', icon: User, color: 'bg-blue-500' },
   { id: 'Gamepad2', icon: Gamepad2, color: 'bg-indigo-500' },
   { id: 'Ghost', icon: Ghost, color: 'bg-purple-500' },

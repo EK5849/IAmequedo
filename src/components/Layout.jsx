@@ -3,8 +3,21 @@ import { BookOpen, LogOut, User } from 'lucide-react';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import ThemeToggle from './ThemeToggle';
+import { avatarOptions } from './UserPrompt';
 
 function Navbar({ user, setUser }) {
+  let userConfig = avatarOptions[0];
+  if (user) {
+    try {
+      const profiles = JSON.parse(localStorage.getItem('unam_profiles') || '[]');
+      const profile = profiles.find(p => p.name === user);
+      if (profile) {
+        userConfig = avatarOptions.find(a => a.id === profile.avatar) || avatarOptions[0];
+      }
+    } catch (e) {}
+  }
+  const IconComp = userConfig.icon;
+
   return (
     <nav className="fixed top-0 w-full z-50 glass-card mx-auto max-w-5xl left-0 right-0 mt-4 px-6 py-4 flex items-center justify-between">
       <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
@@ -14,8 +27,8 @@ function Navbar({ user, setUser }) {
         <span className="font-bold text-xl tracking-tight text-slate-800 dark:text-slate-100">IAme<span className="text-primary-600 dark:text-primary-400">quedo</span></span>
       </Link>
       <div className="flex items-center gap-1 md:gap-4">
-        <div className="hidden md:flex items-center gap-2 text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-full text-sm font-medium">
-          <User size={16} />
+        <div className={`hidden md:flex items-center gap-2 text-white ${userConfig.color} px-4 py-1.5 rounded-full text-sm font-bold shadow-md`}>
+          <IconComp size={18} strokeWidth={2.5} />
           <span>{user}</span>
         </div>
         <ThemeToggle />
