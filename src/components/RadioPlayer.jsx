@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const PLAYLISTS = [
   { id: 'PL14kE7u6TXcZuUvhwXRTtU-7StwxDira_', name: 'Historia de México' },
-  { id: 'PL14kE7u6TXbecJBrBsYimUcBBsk3n1S9', name: 'Español' },
+  { id: 'PL14kE7u6TXcbecJBrBsYimUcBBsk3n1S9', name: 'Español' },
 ];
 
 export default function RadioPlayer() {
