@@ -2,7 +2,7 @@ export const matematicas6Temas = [
  {
  id: "m1_1_3", titulo: "1.1.3 Raíces y potencias con exponente racional",
  ejercicios: [
- { pregunta: "¿A qué expresión radical equivale la potencia fraccionaria x^(2/3)?", opciones: ["Raíz cúbica de x cuadrada", "Raíz cuadrada de x cúbica", "x multiplicada por 2 tercios", "3 veces la raíz de x al cuadrado"], respuesta: "Raíz cúbica de x cuadrada", explicacion: "En un exponente fraccionario a/b, el numerador 'a' es la potencia interior y el denominador 'b' es el índice de la raíz." }
+ { pregunta: "¿A qué expresión radical equivale la potencia fraccionaria x^⁽²⁄³⁾?", opciones: ["Raíz cúbica de x cuadrada", "Raíz cuadrada de x cúbica", "x multiplicada por 2 tercios", "3 veces la raíz de x al cuadrado"], respuesta: "Raíz cúbica de x cuadrada", explicacion: "En un exponente fraccionario a/b, el numerador 'a' es la potencia interior y el denominador 'b' es el índice de la raíz." }
  ]
  },
  {
@@ -14,13 +14,13 @@ export const matematicas6Temas = [
  {
  id: "m1_2_2", titulo: "1.2.2 Multiplicación y división",
  ejercicios: [
- { pregunta: "El resultado de multiplicar (2x)(3x^2) es:", opciones: ["6x^3", "6x^2", "5x^3", "x^3"], respuesta: "6x^3", explicacion: "Al multiplicar bases iguales, los exponentes se suman (1+2=3) y los coeficientes se multiplican (2*3=6)." }
+ { pregunta: "El resultado de multiplicar (2x)(3x²) es:", opciones: ["6x³", "6x²", "5x³", "x³"], respuesta: "6x³", explicacion: "Al multiplicar bases iguales, los exponentes se suman (1+2=3) y los coeficientes se multiplican (2*3=6)." }
  ]
  },
  {
  id: "m1_3_1", titulo: "1.3.1 Suma y resta",
  ejercicios: [
- { pregunta: "Simplifica la expresión: 5/x + 3/x", opciones: ["8/x", "15/x^2", "8/x^2", "5/3x"], respuesta: "8/x", explicacion: "Tienen el mismo denominador, así que los numeradores simplemente se suman: 5+3=8." }
+ { pregunta: "Simplifica la expresión: 5/x + 3/x", opciones: ["8/x", "15/x²", "8/x²", "5/3x"], respuesta: "8/x", explicacion: "Tienen el mismo denominador, así que los numeradores simplemente se suman: 5+3=8." }
  ]
  },
  {
@@ -32,7 +32,7 @@ export const matematicas6Temas = [
  {
  id: "m1_3_3", titulo: "1.3.3 Raíces y potencias con exponente racional",
  ejercicios: [
- { pregunta: "Simplifica la expresión (x^2 * y^4)^(1/2)", opciones: ["xy^2", "x^2y^2", "xy^4", "x(1/2)y^2"], respuesta: "xy^2", explicacion: "El exponente 1/2 equivale a raíz cuadrada, multiplicando los exponentes interiores por 1/2." }
+ { pregunta: "Simplifica la expresión (x² * y⁴)⁽¹/²⁾", opciones: ["xy²", "x²y²", "xy⁴", "x(1/2)y²"], respuesta: "xy²", explicacion: "El exponente 1/2 equivale a raíz cuadrada, multiplicando los exponentes interiores por 1/2." }
  ]
  },
  {
@@ -50,19 +50,19 @@ export const matematicas6Temas = [
  {
  id: "m2_3", titulo: "2.3. Simplificación de fracciones algebraicas",
  ejercicios: [
- { pregunta: "Simplifica: (x^2 - y^2) / (x - y)", opciones: ["x + y", "x - y", "xy", "x^2 + y^2"], respuesta: "x + y", explicacion: "x^2 - y^2 es una diferencia de cuadrados igual a (x-y)(x+y), por lo que se anula (x-y)." }
+ { pregunta: "Simplifica: (x² - y²) / (x - y)", opciones: ["x + y", "x - y", "xy", "x² + y²"], respuesta: "x + y", explicacion: "x² - y² es una diferencia de cuadrados igual a (x-y)(x+y), por lo que se anula (x-y)." }
  ]
  },
  {
  id: "m2_4", titulo: "2.4. Operaciones con fracciones algebraicas",
  ejercicios: [
- { pregunta: "El resultado de multiplicar las fracciones (x/2) * (4/x^2) es:", opciones: ["2/x", "4x / 2x^2", "2x", "x/4"], respuesta: "2/x", explicacion: "(x * 4) / (2 * x^2) = 4x / 2x^2. Simplificando da 2/x." }
+ { pregunta: "El resultado de multiplicar las fracciones (x/2) * (4/x²) es:", opciones: ["2/x", "4x / 2x²", "2x", "x/4"], respuesta: "2/x", explicacion: "(x * 4) / (2 * x²) = 4x / 2x². Simplificando da 2/x." }
  ]
  },
  {
  id: "m3_1", titulo: "3.1. Ecuación identidad y propiedades de la igualdad",
  ejercicios: [
- { pregunta: "¿A qué se llama 'identidad' en álgebra?", opciones: ["A una igualdad matemática que es siempre verdadera para cualquier valor de la variable.", "A una ecuación sin solución real.", "A una expresión de primer grado aislada.", "A una desigualdad condicional que asume valores negativos."], respuesta: "A una igualdad matemática que es siempre verdadera para cualquier valor de la variable.", explicacion: "Por ejemplo, x^2 - y^2 = (x-y)(x+y) siempre es cierto, independiente de x e y." }
+ { pregunta: "¿A qué se llama 'identidad' en álgebra?", opciones: ["A una igualdad matemática que es siempre verdadera para cualquier valor de la variable.", "A una ecuación sin solución real.", "A una expresión de primer grado aislada.", "A una desigualdad condicional que asume valores negativos."], respuesta: "A una igualdad matemática que es siempre verdadera para cualquier valor de la variable.", explicacion: "Por ejemplo, x² - y² = (x-y)(x+y) siempre es cierto, independiente de x e y." }
  ]
  },
  {
@@ -74,7 +74,7 @@ export const matematicas6Temas = [
  {
  id: "m3_3", titulo: "3.3. Ecuaciones de segundo grado",
  ejercicios: [
- { pregunta: "¿Cuántas soluciones tiene la ecuación x^2 - 9 = 0?", opciones: ["Tiene dos soluciones, 3 y -3.", "Solo una, 3.", "Infinitas, por ser de segundo grado.", "No tiene soluciones reales justificables."], respuesta: "Tiene dos soluciones, 3 y -3.", explicacion: "Despejamos x^2 = 9. Obtenemos dos valores posibles: x=3 y x=-3." }
+ { pregunta: "¿Cuántas soluciones tiene la ecuación x² - 9 = 0?", opciones: ["Tiene dos soluciones, 3 y -3.", "Solo una, 3.", "Infinitas, por ser de segundo grado.", "No tiene soluciones reales justificables."], respuesta: "Tiene dos soluciones, 3 y -3.", explicacion: "Despejamos x² = 9. Obtenemos dos valores posibles: x=3 y x=-3." }
  ]
  },
  {
@@ -98,13 +98,13 @@ export const matematicas6Temas = [
  {
  id: "m6_4", titulo: "6.4. Implícitas y explícitas",
  ejercicios: [
- { pregunta: "La expresión 'x^2 + y^2 = 25' es un ejemplo de función:", opciones: ["Implícita", "Explícita", "Logarítmica", "Lineal"], respuesta: "Implícita", explicacion: "El valor de 'y' no está despejado en un lado de la ecuación (como y=...), sino inmerso implícitamente de forma combinada." }
+ { pregunta: "La expresión 'x² + y² = 25' es un ejemplo de función:", opciones: ["Implícita", "Explícita", "Logarítmica", "Lineal"], respuesta: "Implícita", explicacion: "El valor de 'y' no está despejado en un lado de la ecuación (como y=...), sino inmerso implícitamente de forma combinada." }
  ]
  },
  {
  id: "m6_5", titulo: "6.5. Crecientes y decrecientes",
  ejercicios: [
- { pregunta: "Se dice que una función es creciente cuando:", opciones: ["Para todo x1 < x2, se cumple que f(x1) < f(x2).", "Al derivarla dos veces, el resultado es cero absoluto.", "Cruza el origen de izquierda a derecha sin frenar.", "Todos los puntos están sobre el semiplano negativo y."], respuesta: "Para todo x1 < x2, se cumple que f(x1) < f(x2).", explicacion: "Si aumenta x, también debe aumentar f(x)." }
+ { pregunta: "Se dice que una función es creciente cuando:", opciones: ["Para todo x₁ < x₂, se cumple que f(x₁) < f(x₂).", "Al derivarla dos veces, el resultado es cero absoluto.", "Cruza el origen de izquierda a derecha sin frenar.", "Todos los puntos están sobre el semiplano negativo y."], respuesta: "Para todo x₁ < x₂, se cumple que f(x₁) < f(x₂).", explicacion: "Si aumenta x, también debe aumentar f(x)." }
  ]
  },
  {
@@ -128,13 +128,13 @@ export const matematicas6Temas = [
  {
  id: "m7_1_3", titulo: "7.1.3. Resolución de triángulos rectángulos",
  ejercicios: [
- { pregunta: "El Teorema de Pitágoras utilizado fundamentalmente en la resolución de triángulos rectángulos establece que:", opciones: ["c^2 = a^2 + b^2", "c = a + b", "sen(c) = a * b", "a^2 = b * c"], respuesta: "c^2 = a^2 + b^2", explicacion: "La suma de los cuadrados de los catetos es igual al cuadrado generado por la hipotenusa en un triángulo rectángulo ortogonal formal." }
+ { pregunta: "El Teorema de Pitágoras utilizado fundamentalmente en la resolución de triángulos rectángulos establece que:", opciones: ["c² = a² + b²", "c = a + b", "sen(c) = a * b", "a² = b * c"], respuesta: "c² = a² + b²", explicacion: "La suma de los cuadrados de los catetos es igual al cuadrado generado por la hipotenusa en un triángulo rectángulo ortogonal formal." }
  ]
  },
  {
  id: "m7_1_5", titulo: "7.1.5. Resolución",
  ejercicios: [
- { pregunta: "Si el cateto opuesto de un triángulo rectángulo recto vale 3 y el adyacente vale 4, su hipotenusa tiene un valor equivalente formal a:", opciones: ["5", "7", "25", "1"], respuesta: "5", explicacion: "Es un triángulo pitagórico clásico 3-4-5. √(3^2 + 4^2) = √(9+16) = √25 = 5." }
+ { pregunta: "Si el cateto opuesto de un triángulo rectángulo recto vale 3 y el adyacente vale 4, su hipotenusa tiene un valor equivalente formal a:", opciones: ["5", "7", "25", "1"], respuesta: "5", explicacion: "Es un triángulo pitagórico clásico 3-4-5. √(3² + 4²) = √(9+16) = √25 = 5." }
  ]
  },
  {

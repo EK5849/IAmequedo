@@ -1304,7 +1304,7 @@
                 "titulo": "1.1.3. Raíces y potencias con exponente racional",
                 "ejercicios": [
                   {
-                    "pregunta": "¿A qué expresión radical equivale la potencia fraccionaria x^(2/3)?",
+                    "pregunta": "¿A qué expresión radical equivale la potencia fraccionaria x^⁽²⁄³⁾?",
                     "opciones": [
                       "Raíz cúbica de x cuadrada",
                       "Raíz cuadrada de x cúbica",
@@ -1350,14 +1350,14 @@
                 "titulo": "1.2.2. Multiplicación y división",
                 "ejercicios": [
                   {
-                    "pregunta": "El resultado de multiplicar (2x)(3x^2) es:",
+                    "pregunta": "El resultado de multiplicar (2x)(3x²) es:",
                     "opciones": [
-                      "6x^3",
-                      "6x^2",
-                      "5x^3",
-                      "x^3"
+                      "6x³",
+                      "6x²",
+                      "5x³",
+                      "x³"
                     ],
-                    "respuesta": "6x^3",
+                    "respuesta": "6x³",
                     "explicacion": "Al multiplicar bases iguales, los exponentes se suman (1+2=3) y los coeficientes se multiplican (2*3=6)."
                   }
                 ],
@@ -1380,8 +1380,8 @@
                     "pregunta": "Simplifica la expresión: 5/x + 3/x",
                     "opciones": [
                       "8/x",
-                      "15/x^2",
-                      "8/x^2",
+                      "15/x²",
+                      "8/x²",
                       "5/3x"
                     ],
                     "respuesta": "8/x",
@@ -1415,14 +1415,14 @@
                 "titulo": "1.3.3. Raíces y potencias con exponente racional",
                 "ejercicios": [
                   {
-                    "pregunta": "Simplifica la expresión (x^2 * y^4)^(1/2)",
+                    "pregunta": "Simplifica la expresión (x² * y⁴)⁽¹/²⁾",
                     "opciones": [
-                      "xy^2",
-                      "x^2y^2",
-                      "xy^4",
-                      "x(1/2)y^2"
+                      "xy²",
+                      "x²y²",
+                      "xy⁴",
+                      "x(1/2)y²"
                     ],
-                    "respuesta": "xy^2",
+                    "respuesta": "xy²",
                     "explicacion": "El exponente 1/2 equivale a raíz cuadrada, multiplicando los exponentes interiores por 1/2."
                   }
                 ],
@@ -1471,7 +1471,7 @@
                   "Es una fórmula geométrica para deducir áreas entre curvas acotadas."
                 ],
                 "respuesta": "Sirve como método para expandir rápidamente expresiones exponenciales (a+b)^n de cualquier grado, evadiendo la extensa multiplicación manual término a término.",
-                "explicacion": "El Teorema del Binomio dicta directamente los coeficientes sin tener que multiplicar el paréntesis consigo mismo iterativamente (ej. evitar el tedio operativo de expandir a mano (a+b)^100)."
+                "explicacion": "El Teorema del Binomio dicta directamente los coeficientes sin tener que multiplicar el paréntesis consigo mismo iterativamente (ej. evitar el tedio operativo de expandir a mano (a+b)¹⁰⁰)."
               },
               {
                 "pregunta": "Al desarrollar un Binomio al cubo, es decir (a+b)³, la regla fundamental dicta que la cantidad total de términos en el polinomio resultante será de:",
@@ -1523,15 +1523,15 @@
             "titulo": "2.3. Simplificación de fracciones algebraicas",
             "ejercicios": [
               {
-                "pregunta": "Simplifica: (x^2 - y^2) / (x - y)",
+                "pregunta": "Simplifica: (x² - y²) / (x - y)",
                 "opciones": [
                   "x + y",
                   "x - y",
                   "xy",
-                  "x^2 + y^2"
+                  "x² + y²"
                 ],
                 "respuesta": "x + y",
-                "explicacion": "x^2 - y^2 es una diferencia de cuadrados igual a (x-y)(x+y), por lo que se anula (x-y)."
+                "explicacion": "x² - y² es una diferencia de cuadrados igual a (x-y)(x+y), por lo que se anula (x-y)."
               }
             ],
             "hijos": []
@@ -1542,15 +1542,15 @@
             "titulo": "2.4. Operaciones con fracciones algebraicas",
             "ejercicios": [
               {
-                "pregunta": "El resultado de multiplicar las fracciones (x/2) * (4/x^2) es:",
+                "pregunta": "El resultado de multiplicar las fracciones (x/2) * (4/x²) es:",
                 "opciones": [
                   "2/x",
-                  "4x / 2x^2",
+                  "4x / 2x²",
                   "2x",
                   "x/4"
                 ],
                 "respuesta": "2/x",
-                "explicacion": "(x * 4) / (2 * x^2) = 4x / 2x^2. Simplificando da 2/x."
+                "explicacion": "(x * 4) / (2 * x²) = 4x / 2x². Simplificando da 2/x."
               }
             ],
             "hijos": []
@@ -1577,7 +1577,7 @@
                   "A una desigualdad condicional que asume valores negativos."
                 ],
                 "respuesta": "A una igualdad matemática que es siempre verdadera para cualquier valor de la variable.",
-                "explicacion": "Por ejemplo, x^2 - y^2 = (x-y)(x+y) siempre es cierto, independiente de x e y."
+                "explicacion": "Por ejemplo, x² - y² = (x-y)(x+y) siempre es cierto, independiente de x e y."
               }
             ],
             "hijos": []
@@ -1607,7 +1607,7 @@
             "titulo": "3.3. Ecuaciones de segundo grado",
             "ejercicios": [
               {
-                "pregunta": "¿Cuántas soluciones tiene la ecuación x^2 - 9 = 0?",
+                "pregunta": "¿Cuántas soluciones tiene la ecuación x² - 9 = 0?",
                 "opciones": [
                   "Tiene dos soluciones, 3 y -3.",
                   "Solo una, 3.",
@@ -1615,7 +1615,7 @@
                   "No tiene soluciones reales justificables."
                 ],
                 "respuesta": "Tiene dos soluciones, 3 y -3.",
-                "explicacion": "Despejamos x^2 = 9. Obtenemos dos valores posibles: x=3 y x=-3."
+                "explicacion": "Despejamos x² = 9. Obtenemos dos valores posibles: x=3 y x=-3."
               }
             ],
             "hijos": []
@@ -1689,7 +1689,7 @@
                 "titulo": "5.1.1. Métodos de solución",
                 "ejercicios": [
                   {
-                    "pregunta": "¿Cuál es el fundamento visual o geométrico al resolver un sistema de dos ecuaciones lineales con dos incógnitas (2x2)?",
+                    "pregunta": "¿Cuál es el fundamento visual o geométrico al resolver un sistema de dos ecuaciones lineales con dos incógnitas (2x₂)?",
                     "opciones": [
                       "Encontrar el grado de intersección volumétrico entre planos transversales.",
                       "Calcular el grado de concavidad de la parábola proyectada en el origen.",
@@ -1700,7 +1700,7 @@
                     "explicacion": "Geométricamente, una ecuación de primer grado con 2 variables representa una recta lineal en el plano. La resolución al sistema nos arroja la coordenada o punto exacto en el que ambas rentas coinciden o se cruzan."
                   },
                   {
-                    "pregunta": "En el método de 'Sustitución' utilizado en sistemas 2x2, la principal norma operativa indica:",
+                    "pregunta": "En el método de 'Sustitución' utilizado en sistemas 2x₂, la principal norma operativa indica:",
                     "opciones": [
                       "Restar ambas ecuaciones para cancelar directamente la variable con el coeficiente mayor.",
                       "Graficar la intersección en un plano a escala para deducir una de las raíces compuestas.",
@@ -1711,7 +1711,7 @@
                     "explicacion": "Se le llama sustitución porque explícitamente tú 'despejas' una expresión parcial de la primera ecuación y la 'sustituyes' dentro de la segunda ecuación del mismo sistema para volverla lineal en una sola incógnita."
                   },
                   {
-                    "pregunta": "Si al emplear un método algebraico llegas a una contradicción o falsedad del tipo '5 = 0' en sistemas 2x2, esto significa que:",
+                    "pregunta": "Si al emplear un método algebraico llegas a una contradicción o falsedad del tipo '5 = 0' en sistemas 2x₂, esto significa que:",
                     "opciones": [
                       "Las pendientes se volvieron irracionales y se requiere derivar antes de finalizar el cálculo.",
                       "Ocurrió un error aritmético al calcular operaciones divisorias con números primos.",
@@ -1838,7 +1838,7 @@
             "titulo": "6.4. implicitas y explícitas",
             "ejercicios": [
               {
-                "pregunta": "La expresión 'x^2 + y^2 = 25' es un ejemplo de función:",
+                "pregunta": "La expresión 'x² + y² = 25' es un ejemplo de función:",
                 "opciones": [
                   "Implícita",
                   "Explícita",
@@ -1859,12 +1859,12 @@
               {
                 "pregunta": "Se dice que una función es creciente cuando:",
                 "opciones": [
-                  "Para todo x1 < x2, se cumple que f(x1) < f(x2).",
+                  "Para todo x₁ < x₂, se cumple que f(x₁) < f(x₂).",
                   "Al derivarla dos veces, el resultado es cero absoluto.",
                   "Cruza el origen de izquierda a derecha sin frenar.",
                   "Todos los puntos están sobre el semiplano negativo y."
                 ],
-                "respuesta": "Para todo x1 < x2, se cumple que f(x1) < f(x2).",
+                "respuesta": "Para todo x₁ < x₂, se cumple que f(x₁) < f(x₂).",
                 "explicacion": "Si aumenta x, también debe aumentar f(x)."
               }
             ],
@@ -1979,12 +1979,12 @@
                   {
                     "pregunta": "El Teorema de Pitágoras utilizado fundamentalmente en la resolución de triángulos rectángulos establece que:",
                     "opciones": [
-                      "c^2 = a^2 + b^2",
+                      "c² = a² + b²",
                       "c = a + b",
                       "sen(c) = a * b",
-                      "a^2 = b * c"
+                      "a² = b * c"
                     ],
-                    "respuesta": "c^2 = a^2 + b^2",
+                    "respuesta": "c² = a² + b²",
                     "explicacion": "La suma de los cuadrados de los catetos es igual al cuadrado generado por la hipotenusa en un triángulo rectángulo ortogonal formal."
                   }
                 ],
@@ -2023,7 +2023,7 @@
                       "1"
                     ],
                     "respuesta": "5",
-                    "explicacion": "Es un triángulo pitagórico clásico 3-4-5. √(3^2 + 4^2) = √(9+16) = √25 = 5."
+                    "explicacion": "Es un triángulo pitagórico clásico 3-4-5. √(3² + 4²) = √(9+16) = √25 = 5."
                   }
                 ],
                 "hijos": []
@@ -2232,7 +2232,7 @@
             "titulo": "9.1. Distancia entre dos puntos",
             "ejercicios": [
               {
-                "pregunta": "¿Cuál es la deducción geométrica fundamental que origina la fórmula d = √((x2-x1)² + (y2-y1)²) para hallar la distancia entre dos puntos (P1 y P2) en el plano cartesiano?",
+                "pregunta": "¿Cuál es la deducción geométrica fundamental que origina la fórmula d = √((x₂-x₁)² + (y₂-y₁)²) para hallar la distancia entre dos puntos (P1 y P2) en el plano cartesiano?",
                 "opciones": [
                   "El cálculo de la pendiente entre dos puntos equidistantes del origen.",
                   "La integración del área bajo la curva que conecta ambos puntos.",
@@ -2240,7 +2240,7 @@
                   "El principio de la ley de cosenos aplicado a un ángulo llano."
                 ],
                 "respuesta": "La deducción directa analítica del teorema de Pitágoras, al trazar un triángulo rectángulo imaginario entre ambos puntos.",
-                "explicacion": "Al ubicar P1(x1, y1) y P2(x2, y2), la diferencia de sus 'x' forma un cateto, la diferencia de sus 'y' el otro, y la distancia d es la hipotenusa."
+                "explicacion": "Al ubicar P1(x₁, y₁) y P2(x₂, y₂), la diferencia de sus 'x' forma un cateto, la diferencia de sus 'y' el otro, y la distancia d es la hipotenusa."
               },
               {
                 "pregunta": "Si tienes P1(-3, 0) y P2(0, 4), al sustituirlos y resolver en la fórmula de distancia cartesiana, el resultado es:",
@@ -2315,7 +2315,7 @@
                 "opciones": [
                   "Ax + By + C = 0",
                   "y = mx + b",
-                  "r^2 = x^2 + y^2",
+                  "r² = x² + y²",
                   "x/a + y/b = 1"
                 ],
                 "respuesta": "Ax + By + C = 0",
@@ -2349,14 +2349,14 @@
             "titulo": "9.6. Distancia de un punto a una recta",
             "ejercicios": [
               {
-                "pregunta": "La fórmula de para a evaluar la a formal es o distancia formal perpendicular mínima general referencial formal e ineludible ideal y la la mínima principal punto ideal perpendicular mínima referencial mínima P(x1,y1) a recta general recta mínima la genérica o d referencial a Ax+By+C=0 e ideal mínima a a la de usa:",
+                "pregunta": "La fórmula de para a evaluar la a formal es o distancia formal perpendicular mínima general referencial formal e ineludible ideal y la la mínima principal punto ideal perpendicular mínima referencial mínima P(x₁,y₁) a recta general recta mínima la genérica o d referencial a Ax+By+C=0 e ideal mínima a a la de usa:",
                 "opciones": [
-                  "El de d valor d la a absoluto de la (Ax1 + de de a el By1 + d la a a la C) By1 valor y la dividido a entre de fundamental la y la la a normal o de o magnitud del el d o de la el a magnitud e magnitud a el a vector a la de (√A^2+B^2)",
-                  "Una simple de resta general de y de resta general su el formal a o referencial forma de de su su forma a resta formal de su de del del x1 y2",
+                  "El de d valor d la a absoluto de la (Ax₁ + de de a el By₁ + d la a a la C) By₁ valor y la dividido a entre de fundamental la y la la a normal o de o magnitud del el d o de la el a magnitud e magnitud a el a vector a la de (√A²+B²)",
+                  "Una simple de resta general de y de resta general su el formal a o referencial forma de de su su forma a resta formal de su de del del x₁ y₂",
                   "La teorema el o hipotenusa a el teorema referencial general fundamental del o del a fundamental fundamental o a el a pitagórica el pitagórica la pitagórica o pitagórica",
                   "La la inversa constante inverso fundamental un pitagórica pitagórica de pitagórica pitagórica a el fundamental fundamental un a el de a el a un de de pitagórica a inverso o un inverso de inverso de"
                 ],
-                "respuesta": "El de d valor d la a absoluto de la (Ax1 + de de a el By1 + d la a a la C) By1 valor y la dividido a entre de fundamental la y la la a normal o de o magnitud del el d o de la el a magnitud e magnitud a el a vector a la de (√A^2+B^2)",
+                "respuesta": "El de d valor d la a absoluto de la (Ax₁ + de de a el By₁ + d la a a la C) By₁ valor y la dividido a entre de fundamental la y la la a normal o de o magnitud del el d o de la el a magnitud e magnitud a el a vector a la de (√A²+B²)",
                 "explicacion": "La distancia evalúa el polinomio general de la recta en ese punto X,Y tomando el absoluto formal y dividirlo bajo Pitágoras."
               }
             ],
@@ -2427,13 +2427,13 @@
               {
                 "pregunta": "Si el centro natural centralizado formal u o u o origen formal o formal absoluto originario formal natural forma natural forma y principal o o está u puro puro en puro en puro en absoluto puro (0,0) (0,0) u absoluto formal puro absoluto o formal en puro puro puro (0,0) la centro originaria es de (0,0) centro a (0,0) (0,0) del circunscripta circunscripta de circunferencia es:",
                 "opciones": [
-                  "x^2 la y de la x^2 ecuación x^2 a + + x^2 y y^2 y a + ecuación ecuación + + m + x^2 + ecuación ecuación + x^2 + + de + referencial y + + + + + + formal + y^2 y^2 de de = la = = a = = d a r^2 r^2 a =",
+                  "x² la y de la x² ecuación x² a + + x² y y² y a + ecuación ecuación + + m + x² + ecuación ecuación + x² + + de + referencial y + + + + + + formal + y² y² de de = la = = a = = d a r² r² a =",
                   "y formal formal ms = a formal de x formal formal = formal a a a formal de ms ms +",
                   "a a b b ms a b a a a a b b b a a a a a",
                   "b b d d d a a d ms a d a d a b d d d x b x m a b m"
                 ],
-                "respuesta": "x^2 la y de la x^2 ecuación x^2 a + + x^2 y y^2 y a + ecuación ecuación + + m + x^2 + ecuación ecuación + x^2 + + de + referencial y + + + + + + formal + y^2 y^2 de de = la = = a = = d a r^2 r^2 a =",
-                "explicacion": "La ecuación canónica sin la a de de desplazamiento sin a de la a a la a (h,k) es x^2+y^2=r^2."
+                "respuesta": "x² la y de la x² ecuación x² a + + x² y y² y a + ecuación ecuación + + m + x² + ecuación ecuación + x² + + de + referencial y + + + + + + formal + y² y² de de = la = = a = = d a r² r² a =",
+                "explicacion": "La ecuación canónica sin la a de de desplazamiento sin a de la a a la a (h,k) es x²+y²=r²."
               }
             ],
             "hijos": []
@@ -2446,13 +2446,13 @@
               {
                 "pregunta": "Si la centro de la circunferencia el del originario origen movió ms ms movió y o ms ms a ms y a movió el a a a se de a p de m la formal la el de se de origen p ms a la p m ms a p de la se de ms (h,k) (h,k) p m (h,k) a (h,k) (h,k) a (h,k) p de p de la (h,k) a (h,k) a de (h,k) a p de de se de a a (h,k) la de (h,k) es forma (h,k) es la forma (h,k) forma forma:",
                 "opciones": [
-                  "(x - ms - la a m x - - de (x de de la x a (x a el de x - a - a h)^2 h)^2 - y a - de h)^2 y + h)^2 la (y a + y a a (y a a de (y + (x a (y de (y - h)^2 de - + e h)^2 la (y - y - de la a a - h)^2 la + de a la (y el k)^2 k)^2 - (y a k)^2 el k)^2 a (y k)^2 y (x k)^2 - - la a k)^2 de de = de = = el de el de = de las a la a r^2 las = a a la r^2 =",
+                  "(x - ms - la a m x - - de (x de de la x a (x a el de x - a - a h)² h)² - y a - de h)² y + h)² la (y a + y a a (y a a de (y + (x a (y de (y - h)² de - + e h)² la (y - y - de la a a - h)² la + de a la (y el k)² k)² - (y a k)² el k)² a (y k)² y (x k)² - - la a k)² de de = de = = el de el de = de las a la a r² las = a a la r² =",
                   "a ms p la a la a m a p m la (x a b a",
                   "m m ps la p de de p la a b p ps m a b b b a a",
                   "m a n a b x x = m n m - b"
                 ],
-                "respuesta": "(x - ms - la a m x - - de (x de de la x a (x a el de x - a - a h)^2 h)^2 - y a - de h)^2 y + h)^2 la (y a + y a a (y a a de (y + (x a (y de (y - h)^2 de - + e h)^2 la (y - y - de la a a - h)^2 la + de a la (y el k)^2 k)^2 - (y a k)^2 el k)^2 a (y k)^2 y (x k)^2 - - la a k)^2 de de = de = = el de el de = de las a la a r^2 las = a a la r^2 =",
-                "explicacion": "Incluye restar las coordenadas m del m la de m a centro m la de del centro centro de de de m de las m: las h variables las e de la la y m de en (x-h)^2 y (y-k)^2 el la."
+                "respuesta": "(x - ms - la a m x - - de (x de de la x a (x a el de x - a - a h)² h)² - y a - de h)² y + h)² la (y a + y a a (y a a de (y + (x a (y de (y - h)² de - + e h)² la (y - y - de la a a - h)² la + de a la (y el k)² k)² - (y a k)² el k)² a (y k)² y (x k)² - - la a k)² de de = de = = el de el de = de las a la a r² las = a a la r² =",
+                "explicacion": "Incluye restar las coordenadas m del m la de m a centro m la de del centro centro de de de m de las m: las h variables las e de la la y m de en (x-h)² y (y-k)² el la."
               }
             ],
             "hijos": []
@@ -2509,7 +2509,7 @@
             "titulo": "11.2. Formas ordinaria y general de la ecuación de la parábola cuando el vértice está en el origen y el eje focal coincide con alguno de los ejes coordenados",
             "ejercicios": [
               {
-                "pregunta": "x^2 c o de s en t n s c h un j en c r t x ecuación y f b",
+                "pregunta": "x² c o de s en t n s c h un j en c r t x ecuación y f b",
                 "opciones": [
                   "y c v la s parábola g i k f de d m x e en origen t i c u n i parab n h a s h m s c l e",
                   "s g m b a d t elipse v s s p b v m s m",
@@ -2536,7 +2536,7 @@
                   "b l w w j q i s g n m o r a z k origen t m t l"
                 ],
                 "respuesta": "Es f en en parábola l x k x s u en b p de u e (h,k) k f h k m a k a m n d t parabula i (h k) y z p l d p b (h,k) q e f r",
-                "explicacion": "(y-k)^2 g r r n r = a x y k f l 4p(x-h) w j o es l g w l v t i r b la r i de f t h a u parábola desplazada x r j u s w n h,k s n t r k w p m f c de h l z z g a origen p p t v k j y k r b un e c l f s e l o y l d z i b x m p origen m z d f g s m m x j y desplazado w c j b e m f j i h n p p l b f e."
+                "explicacion": "(y-k)² g r r n r = a x y k f l 4p(x-h) w j o es l g w l v t i r b la r i de f t h a u parábola desplazada x r j u s w n h,k s n t r k w p m f c de h l z z g a origen p p t v k j y k r b un e c l f s e l o y l d z i b x m p origen m z d f g s m m x j y desplazado w c j b e m f j i h n p p l b f e."
               }
             ],
             "hijos": []
@@ -2614,12 +2614,12 @@
               {
                 "pregunta": "Eje o s t s q mayor el i h j eje s",
                 "opciones": [
-                  "x^2/a^2 t c y i t t p x v d j + o y l j x n k h w g i v h f d q q f v a w x h y^2/b^2 k o f i m b z h de z v in c j q v v t j o q v h y y del t o= u k s r y u r j t n k r h 1 v z i j i p a l y n g w b m d q j h origen k s g g y u no f t a l w s x",
+                  "x²/a² t c y i t t p x v d j + o y l j x n k h w g i v h f d q q f v a w x h y²/b² k o f i m b z h de z v in c j q v v t j o q v h y y del t o= u k s r y u r j t n k r h 1 v z i j i p a l y n g w b m d q j h origen k s g g y u no f t a l w s x",
                   "a e w y k y p r q b =0 p e l z h k z i w s u u q z d l p j x j c e n z l o r y z t g c d y x m j g f l b",
                   "m d x c h o e q p x h x k*m u c q q u w x s v r r l a u g n x f y w c v =9 v m v a d o l e h o b g h b l c u  x z h f i d u q a y",
                   "f t z o b s i o s v k o l u no v e m z z origen k z d n t n f y z en g y h l q t = a p h d x w s n g f u q de e a w y a e u "
                 ],
-                "respuesta": "x^2/a^2 t c y i t t p x v d j + o y l j x n k h w g i v h f d q q f v a w x h y^2/b^2 k o f i m b z h de z v in c j q v v t j o q v h y y del t o= u k s r y u r j t n k r h 1 v z i j i p a l y n g w b m d q j h origen k s g g y u no f t a l w s x",
+                "respuesta": "x²/a² t c y i t t p x v d j + o y l j x n k h w g i v h f d q q f v a w x h y²/b² k o f i m b z h de z v in c j q v v t j o q v h y y del t o= u k s r y u r j t n k r h 1 v z i j i p a l y n g w b m d q j h origen k s g g y u no f t a l w s x",
                 "explicacion": "Elipse y g f m en f b w (0,0) t g n = a d simple t k u t a w u l j sin w x h w s restas w t l l q i c b a."
               }
             ],
@@ -2633,12 +2633,12 @@
               {
                 "pregunta": "d c h f w q i con s e q e hk",
                 "opciones": [
-                  "(x-h)^2 c hk g / a^2 o y y (y-k)^2 m c t p de e t k h r (h,k)",
+                  "(x-h)² c hk g / a² o y y (y-k)² m c t p de e t k h r (h,k)",
                   "d k n b x b d s u c/ e i d w t r h a i hk t= c z c s z f no x d y f q a e k q g r g f s d j w h t de m j v hk x m p",
                   "b s k e k a x e r u j a no= m z n y m h e l j e n d g m b s j w d z l t k n k x t r n b f d u p f u m r g d c v g s d k q n",
                   "j no q i p p simple t q x j a v j c e q no n l r r g no g (00) y n g y =q f z n "
                 ],
-                "respuesta": "(x-h)^2 c hk g / a^2 o y y (y-k)^2 m c t p de e t k h r (h,k)",
+                "respuesta": "(x-h)² c hk g / a² o y y (y-k)² m c t p de e t k h r (h,k)",
                 "explicacion": "Desplazada d t h m d c u restando h y v s p p u h n t d u en f c j w de l n x el p k r h."
               }
             ],
@@ -3152,7 +3152,7 @@
                   "El valor cuadrático derivado del radio puro de la curva cero neutro de base unificada tangente horizontal"
                 ],
                 "respuesta": "Requieres obligatoriamente de un Punto de la función (una pareja x, y) obtenido al evaluarla en x, así como de la Pendiente de la tangente en dicho lugar obtenido al evaluar su derivada f'(x).",
-                "explicacion": "Con la pendiente 'm' (la derivada evaluada f'(x)) y un punto (x1, y1), se aplica la ecuación punto-pendiente: (y - y1) = m (x - x1)."
+                "explicacion": "Con la pendiente 'm' (la derivada evaluada f'(x)) y un punto (x₁, y₁), se aplica la ecuación punto-pendiente: (y - y₁) = m (x - x₁)."
               }
             ],
             "hijos": []

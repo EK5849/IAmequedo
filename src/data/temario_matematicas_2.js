@@ -4,7 +4,7 @@ export const matematicas2Temas = [
  titulo: "9.1 Distancia entre dos puntos",
  ejercicios: [
  { 
- pregunta: "¿Cuál es la deducción geométrica fundamental que origina la fórmula d = √((x2-x1)² + (y2-y1)²) para hallar la distancia entre dos puntos (P1 y P2) en el plano cartesiano?", 
+ pregunta: "¿Cuál es la deducción geométrica fundamental que origina la fórmula d = √((x₂-x₁)² + (y₂-y₁)²) para hallar la distancia entre dos puntos (P1 y P2) en el plano cartesiano?", 
  opciones: [
  "El cálculo de la pendiente entre dos puntos equidistantes del origen.", 
  "La integración del área bajo la curva que conecta ambos puntos.", 
@@ -12,7 +12,7 @@ export const matematicas2Temas = [
  "El principio de la ley de cosenos aplicado a un ángulo llano."
  ], 
  respuesta: "La deducción directa analítica del teorema de Pitágoras, al trazar un triángulo rectángulo imaginario entre ambos puntos.", 
- explicacion: "Al ubicar P1(x1, y1) y P2(x2, y2), la diferencia de sus 'x' forma un cateto, la diferencia de sus 'y' el otro, y la distancia d es la hipotenusa." 
+ explicacion: "Al ubicar P1(x₁, y₁) y P2(x₂, y₂), la diferencia de sus 'x' forma un cateto, la diferencia de sus 'y' el otro, y la distancia d es la hipotenusa." 
  },
  { 
  pregunta: "Si tienes P1(-3, 0) y P2(0, 4), al sustituirlos y resolver en la fórmula de distancia cartesiana, el resultado es:", 

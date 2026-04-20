@@ -1,9 +1,9 @@
 export const matematicas3Temas = [
  {
- id: "m5_1_1", titulo: "5.1.1 Sistema 2x2: Métodos de solución",
+ id: "m5_1_1", titulo: "5.1.1 Sistema 2x₂: Métodos de solución",
  ejercicios: [
  { 
- pregunta: "¿Cuál es el fundamento visual o geométrico al resolver un sistema de dos ecuaciones lineales con dos incógnitas (2x2)?", 
+ pregunta: "¿Cuál es el fundamento visual o geométrico al resolver un sistema de dos ecuaciones lineales con dos incógnitas (2x₂)?", 
  opciones: [
  "Encontrar el grado de intersección volumétrico entre planos transversales.", 
  "Calcular el grado de concavidad de la parábola proyectada en el origen.", 
@@ -14,7 +14,7 @@ export const matematicas3Temas = [
  explicacion: "Geométricamente, una ecuación de primer grado con 2 variables representa una recta lineal en el plano. La resolución al sistema nos arroja la coordenada o punto exacto en el que ambas rentas coinciden o se cruzan." 
  },
  { 
- pregunta: "En el método de 'Sustitución' utilizado en sistemas 2x2, la principal norma operativa indica:", 
+ pregunta: "En el método de 'Sustitución' utilizado en sistemas 2x₂, la principal norma operativa indica:", 
  opciones: [
  "Restar ambas ecuaciones para cancelar directamente la variable con el coeficiente mayor.", 
  "Graficar la intersección en un plano a escala para deducir una de las raíces compuestas.", 
@@ -25,7 +25,7 @@ export const matematicas3Temas = [
  explicacion: "Se le llama sustitución porque explícitamente tú 'despejas' una expresión parcial de la primera ecuación y la 'sustituyes' dentro de la segunda ecuación del mismo sistema para volverla lineal en una sola incógnita." 
  },
  { 
- pregunta: "Si al emplear un método algebraico llegas a una contradicción o falsedad del tipo '5 = 0' en sistemas 2x2, esto significa que:", 
+ pregunta: "Si al emplear un método algebraico llegas a una contradicción o falsedad del tipo '5 = 0' en sistemas 2x₂, esto significa que:", 
  opciones: [
  "Las pendientes se volvieron irracionales y se requiere derivar antes de finalizar el cálculo.", 
  "Ocurrió un error aritmético al calcular operaciones divisorias con números primos.", 
@@ -55,7 +55,7 @@ export const matematicas3Temas = [
  pregunta: "Para garantizar que un sistema 3x3 pueda ser válidamente procesado con la fórmula de Cramer, ¿qué prerrequisito debe imperar sin falla?", 
  opciones: [
  "Ningún coeficiente presente en la primera columna debe rebasar el valor 1.", 
- "Las variables siempre deben de manifestar exponente elevado de manera consecutiva en el grado x^3.", 
+ "Las variables siempre deben de manifestar exponente elevado de manera consecutiva en el grado x³.", 
  "El determinante principal o global (Delta del sistema) conformado por los coeficientes NO debe arrojar un valor de cero.", 
  "Todas las variables de incógnitas deben encontrarse balanceadas en la raíz cuadrada simétrica de su módulo."
  ], 
