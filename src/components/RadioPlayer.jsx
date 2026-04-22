@@ -3,6 +3,7 @@ import { Headphones, X, ChevronDown, Music, ExternalLink } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const PLAYLISTS = [
+  { id: 'PL14kE7u6TXcYTAFbYHt4ArMc2pyx6BVKI', name: 'Todas las materias (Mix)' },
   { id: 'PL14kE7u6TXcZuUvhwXRTtU-7StwxDira_', name: 'Historia de México' },
   { id: 'PL14kE7u6TXcbecJBrBsYimUcBBsk3n1S9', name: 'Español' },
   { id: 'PL14kE7u6TXcZ5dFhX1b0DkB6pNzi8d0kq', name: 'Matemáticas' },
