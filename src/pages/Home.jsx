@@ -140,7 +140,7 @@ export default function Home() {
         </motion.p>
       </section>
 
-      <motion.section variants={itemVariants} className="grid md:grid-cols-3 gap-6">
+      <motion.section variants={itemVariants} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
         <Link to="/temario" className="glass-card p-6 space-y-4 hover:-translate-y-1 transition-transform border border-transparent hover:border-blue-200 text-left cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500">
           <div className="w-12 h-12 rounded-2xl bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 flex items-center justify-center">
             <BookOpen size={24} />
@@ -163,6 +163,14 @@ export default function Home() {
           </div>
           <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100">Simuladores</h3>
           <p className="text-slate-500 dark:text-slate-400">Mide tu tiempo y conocimientos respondiendo preguntas estilo UNAM antes del día real.</p>
+        </Link>
+
+        <Link to="/recursos" className="glass-card p-6 space-y-4 hover:-translate-y-1 transition-transform border border-transparent hover:border-emerald-200 text-left cursor-pointer focus:outline-none focus:ring-2 focus:ring-emerald-500">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
+            <Zap size={24} />
+          </div>
+          <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100">Material Didáctico</h3>
+          <p className="text-slate-500 dark:text-slate-400">Recursos interactivos como la Tabla Periódica para dominar temas visualmente.</p>
         </Link>
       </motion.section>
 

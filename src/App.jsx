@@ -7,6 +7,8 @@ import Flashcards from './pages/Flashcards';
 import Simulator from './pages/Simulator';
 import UserPrompt from './components/UserPrompt';
 import Quiz from './pages/Quiz';
+import Resources from './pages/Resources';
+import PeriodicTable from './pages/resources/PeriodicTable';
 
 function App() {
   const [user, setUser] = useState(() => localStorage.getItem('unam_user'));
@@ -24,8 +26,11 @@ function App() {
           <Route path="quiz/:materiaId/:temaId" element={<Quiz />} />
           <Route path="flashcards" element={<Flashcards />} />
           <Route path="simulador" element={<Simulator />} />
+          <Route path="recursos" element={<Resources />} />
+          <Route path="recursos/quimica/tabla-periodica" element={<PeriodicTable />} />
         </Route>
       </Routes>
+
     </BrowserRouter>
   );
 }
